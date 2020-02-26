@@ -5,9 +5,8 @@ This project is a requirement to graduate at Cloud DevOps Nanodegree. The projec
 
 # Technologies
   * One html page is main application. </br>
-Docker, for building a ready-deploy application.
-Kubernetes(AWS EKS), for automating deployment, scaling, and management of containerized applications.
-NGINX Ingress Controller, for assembling an NGINX configuration file (nginx.conf).
-CloudFormation, for agentless IT automation.
-Aqua Microscanner, for docker protection, monitoring, logging and real-time analysis.
-Jenkins, for automatic integrations and deployments(CI/CD).
+  * Docker, for building a ready-deploy application. </br>
+  * Kubernetes(AWS EKS), for automating deployment, scaling, and management of containerized applications. </br>
+  * NGINX Ingress Controller, for assembling an NGINX configuration file (nginx.conf). </br>
+  * CloudFormation, for agentless IT automation. </br>
+  * Jenkins, for automatic integrations and deployments(CI/CD).
