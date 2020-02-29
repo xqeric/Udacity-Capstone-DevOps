@@ -1,0 +1,22 @@
+{
+   "kind":"Service",
+   "apiVersion":"v1",
+   "metadata":{
+      "name":"mylb",
+      "labels":{
+         "app":"mylb"
+      }
+   },
+   "spec":{
+      "ports": [
+         {
+           "port":8000,
+           "targetPort":80
+         }
+      ],
+      "selector":{
+         "app":"webdemo"
+      },
+      "type": "LoadBalancer"
+   }
+}

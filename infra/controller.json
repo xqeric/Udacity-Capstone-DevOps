@@ -1,0 +1,39 @@
+{
+   "kind":"ReplicationController",
+   "apiVersion":"v1",
+   "metadata":{
+      "name":"webdemo",
+      "labels":{
+         "app":"webdemo"
+      }
+   },
+   "spec":{
+      "replicas":1,
+      "selector":{
+         "app":"webdemo"
+      },
+      "template":{
+         "metadata":{
+            "labels":{
+               "app":"webdemo"
+               
+            }
+         },
+         "spec":{
+            "containers":[
+               {
+                  "name":"webdemo",
+                  "image":"ericdock/devops-capstone-webdemo:latest",
+                  "imagePullPolicy":"Always",
+                  "ports":[
+                     {
+                        "name":"http-server",
+                        "containerPort":80
+                     }
+                  ]
+               }
+            ]
+         }
+      }
+   }
+}
